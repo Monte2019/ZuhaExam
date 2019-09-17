@@ -1,6 +1,26 @@
 package math.problems;
 
+import java.io.*;
+import java.util.ArrayList;
+
 public class PrimeNumber {
+
+    static boolean Prime(int bigNumber) {
+        if (bigNumber <= 1)
+            return false;
+
+        for ( int i = 2; i < bigNumber; i++)
+            if (bigNumber % i == 0)
+                return false;
+        return true;
+    }
+
+    static void findPrime(int bigNumber) {
+        for ( int i = 2; i <= bigNumber; i++){
+            if (Prime(i))
+                System.out.println(i + " ");
+        }
+    }
 
     public static void main(String[] args) {
         /*
@@ -13,6 +33,8 @@ public class PrimeNumber {
          *
          */
 
-    }
+        int bigNumber = 1000000;
+        findPrime(bigNumber);
 
+    }
 }

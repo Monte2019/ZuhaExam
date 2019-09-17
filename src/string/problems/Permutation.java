@@ -9,5 +9,14 @@ public class Permutation {
          * Write Java program to compute all Permutation of a String
          *
          */
+        String example = "EAT";
+        String[] newArray = example.split("");
+
+        for (int i=0; i<newArray.length;i++){
+            String newWord = "";
+            newWord += newArray[i];
+
+        }
     }
 }
+//Answer is eat, ate, eta,tae,tea,aet

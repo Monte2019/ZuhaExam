@@ -15,9 +15,6 @@ public class EmployeeInfo {
      * Implement Nested class.
      * Use Exception Handling.
      *
-     */
-
-    /*
      * declare few static and final fields and some non-static fields
      */
     static String companyName;
